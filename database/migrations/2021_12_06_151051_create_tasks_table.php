@@ -19,6 +19,8 @@ class CreateTasksTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+
     }
 
     /**
@@ -28,6 +30,6 @@ class CreateTasksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tasks');
+        Schema::drop('tasks');
     }
 }
